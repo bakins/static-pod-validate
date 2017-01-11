@@ -18,7 +18,7 @@ func main() {
 	//	format := flag.String("format", "", "format of the file -json or yaml - if unset, attempt to detect from file extension")
 	flag.Parse()
 
-	if len(os.Args) == 0 {
+	if len(os.Args) > 2 {
 		fmt.Println("need a file")
 		os.Exit(-2)
 	}
