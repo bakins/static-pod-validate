@@ -15,15 +15,12 @@ import (
 )
 
 func main() {
-	//	format := flag.String("format", "", "format of the file -json or yaml - if unset, attempt to detect from file extension")
 	flag.Parse()
 
-	if len(os.Args) > 2 {
+	if len(os.Args) < 2 {
 		fmt.Println("need a file")
 		os.Exit(-2)
 	}
-
-	//	v1.E
 
 	data, err := ioutil.ReadFile(os.Args[1])
 	if err != nil {
