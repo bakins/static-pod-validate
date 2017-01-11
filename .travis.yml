@@ -1,0 +1,18 @@
+language: go
+go:
+- 1.7.x
+notifications:
+  email: false
+install:
+- true
+script:
+- "./script/build"
+deploy:
+  provider: releases
+  file:
+    - static-pod-validate.linux
+    - static-pod-validate.darwin
+  skip_cleanup: true
+  on:
+    repo: bakins/static-pod-validate
+    tags: true

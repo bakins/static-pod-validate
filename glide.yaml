@@ -1,0 +1,9 @@
+package: github.com/bakins/static-pod-lint
+import:
+- package: k8s.io/kubernetes
+  version: 1.5.1
+  subpackages:
+  - pkg/api
+  - pkg/api/install
+  - pkg/runtime
+  - pkg/util/yaml
