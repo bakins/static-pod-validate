@@ -5,3 +5,7 @@ export GOARCH=amd64
 
 GOOS=darwin go build -o static-pod-validate.darwin .
 GOOS=linux go build -o static-pod-validate.linux .
+
+pwd
+
+ls -l
