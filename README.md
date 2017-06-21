@@ -21,7 +21,7 @@ Usage
 
 `static-pod-validate <yaml-or-json-file`
 
-will exit 0 if the manifest is valid.  Non-zreo if invalid, wtih a (hopefully useful)
+will exit 0 if the manifest is valid.  Non-zero if invalid, wtih a (hopefully useful)
 error message.
 
 License
